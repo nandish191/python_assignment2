@@ -1,0 +1,80 @@
+#program to print repeted elements
+st="python session"
+for ele in st:
+    if st.count(ele)>1:
+        print(ele, end =" ")
+
+#remove duplicate char in str
+
+st="hello world"
+li=list(st)
+for ele in li:
+    if li.count(ele)>1:
+        li.remove(ele)
+        print(ele)
+        
+
+a=10
+b=10
+c=b
+print(id(a))
+print(id(b))
+print(id(c))
+
+#remove decimal no from list
+
+li=[1,2,3.2,4,5.6, 7]
+for ele in li:
+    if isinstance(ele, float):
+        li.remove(ele)
+print(li)
+
+# to check weather the string is palindrome or not
+st="malayalam"
+li=list(st)
+#print(li[::1])
+#print(li[::-1])
+if li[::1]==li[::-1]:
+    print("given string is palindrome", li)
+
+#reverse a string
+st="hello world"
+li=list(st)
+rev=li[::-1]
+print(li)
+print(rev)
+
+#write a program to print vowels in a string
+st="Besant Technologies"
+vowels=['a','e','i','o','u']
+li=list(st)
+for ele in li:
+    if ele in vowels:
+        print(ele, end=" ")
+
+#check weather the no is positive or negetive no
+num=eval(input("enter a number :"))
+if num >=0:
+    print("positive no :", num)
+elif num<0:
+    print("negetive no :", num)
+else:
+    print(num)
+
+# program to print max ele in list and remove string
+li=[1,2,3,55,66,77,88, "hello"]
+for ele in li:
+    if isinstance(ele , str):
+        li.remove(ele)
+        print(max(li))
+
+#write a program to check even odd no
+num=eval(input("enter number :"))
+if num%2==0:
+    print("even no :", num)
+elif num%2!=0:
+    print("odd no :", num)
+else:
+    print(num)
+
+        
